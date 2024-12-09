@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Hub</title>
+    <style>
+      ol {
+        list-style-type: none;
+        counter-reset: item;
+        margin: 0;
+        padding: 0;
+      }
+
+      ol > li {
+        display: table;
+        counter-increment: item;
+        margin-bottom: 0.6em;
+      }
+
+      ol > li:before {
+        content: counters(item, ".") ". ";
+        display: table-cell;
+        padding-right: 0.6em;
+      }
+
+      li ol > li {
+        margin: 0;
+      }
+
+      li ol > li:before {
+        content: counters(item, ".") " ";
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section>
+        <a href="../../index.html">
+          <img src="../../assets/img/logo.svg" alt="Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../../pages/login">Login</a></li>
+            <li><a href="../../pages/register">Register</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56"
+          height="56"
+          viewBox="0 0 56 56"
+          fill="none"
+        >
+          <path
+            d="M28 2.33334L7 11.6667V25.6667C7 38.6167 15.96 50.7267 28 53.6667C40.04 50.7267 49 38.6167 49 25.6667V11.6667L28 2.33334ZM25.6667 16.3333H30.3333V21H25.6667V16.3333ZM25.6667 25.6667H30.3333V39.6667H25.6667V25.6667Z"
+            fill="#FFA31A"
+          />
+        </svg>
+        <span>Privacy</span>
+      </h1>
+
+      <ol>
+        <li>
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </li>
+        <li>
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+          <ol>
+            <li>
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation.
+              </p>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <h2>Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+        </li>
+      </ol>
+    </main>
+    <footer>
+      <hr />
+      <span>&copy; AnndreJunior, IFCE</span>
+      <img src="../../assets/img/logo.svg" alt="logo" width="94" height="47" />
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../pages/about">About</a></li>
+        <li><a href="../../pages/privacy">Privacy</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
